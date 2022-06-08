@@ -49,7 +49,7 @@ public class FirstprojectApplication {
 		
 		ObjectMapper ob = new ObjectMapper();
 		SimpleModule module = new SimpleModule("CustomBinanceKindleDeserializer", new Version(1, 0, 0, null, null, null));
-		module.addDeserializer(BinanceKline.class, new CustomBinanceKindleDeserializer());
+		module.addDeserializer(BinanceKline.class, new CustomBinanceKlineDeserializer());
 		ob.registerModule(module);
 		klines = (List<BinanceKline>) ob.readValue(json, new TypeReference<List<BinanceKline>>(){});
 		

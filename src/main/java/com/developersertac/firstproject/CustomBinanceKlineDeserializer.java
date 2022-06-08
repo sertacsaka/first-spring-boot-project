@@ -10,18 +10,18 @@ import com.fasterxml.jackson.databind.DeserializationContext;
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.deser.std.StdDeserializer;
 
-public class CustomBinanceKindleDeserializer extends StdDeserializer<BinanceKline> {
+public class CustomBinanceKlineDeserializer extends StdDeserializer<BinanceKline> {
     
     /**
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
 
-	public CustomBinanceKindleDeserializer() {
+	public CustomBinanceKlineDeserializer() {
         this(null);
     }
 
-    public CustomBinanceKindleDeserializer(Class<?> vc) {
+    public CustomBinanceKlineDeserializer(Class<?> vc) {
         super(vc);
     }
 
