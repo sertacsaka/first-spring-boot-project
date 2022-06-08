@@ -1,5 +1,5 @@
 # first-spring-boot-project
-My first step towards learning Git and Spring Boot
+## My first step towards learning Git and Spring Boot
 
 This is a simple spring boot application that fetch data from Binance API and insert into MongoDB database.
 
